@@ -61,25 +61,3 @@ If you want to use your own datasets and perform the complete two-stage process,
     python mask.py
     ```
 
-## Contributing
-We welcome contributions to the WDSS project! Here are some ways you can contribute:
-- Report bugs and issues
-- Submit feature requests
-- Write or improve documentation
-- Submit pull requests for code improvements or new features
-
-Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Acknowledgements
-We would like to thank all the contributors and the open-source community for their support.
-
-## Contact
-If you have any questions or need further assistance, please feel free to contact us at dehaozhou@example.com.
-
----
-
-Thank you for using WDSS! We hope it helps you in your research and projects.
-
