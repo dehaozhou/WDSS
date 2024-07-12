@@ -60,6 +60,9 @@ WDSS/
 │   │   │   ├── 2/
 │   ├── potsdam/
 │   └── vaihingen/
+├── pretrain/
+│   ├── sam_vit_h_4b8939.pth
+│   ├── swinv2_base_patch4_window16_256.pth
 ├── model/
 │   ├── FTUNetFormer.py
 │   ├── FTUNetFormer_1.py
