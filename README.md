@@ -19,7 +19,7 @@ You can download the pre-processed datasets from the following Baidu Netdisk lin
 
 Vaihingen: [https://pan.baidu.com/s/1ONi-iKEdgIVXRBarZechVg]
 
-Loveda: [Baidu Netdisk Link](your_baidu_link)
+Loveda: [https://pan.baidu.com/s/1LJpVGdl9aY006Md1RQtmVw ]
 
 Potsdam: [https://pan.baidu.com/s/1qSPbHBkR5iCfRTwminY_HQ ]
 
