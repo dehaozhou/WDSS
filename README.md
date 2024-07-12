@@ -33,7 +33,7 @@ After downloading and extracting, place the datasets in the `./Datasets` directo
 
 ## Usage
 
-### Two-Stage Self-Training Framework
+### Two-Stage Self-Training 
 You can directly download our pre-processed datasets and use them for the second stage of training without generating SGO and SGB or performing the first stage of training to prepare pseudo-labels.
 
 #### Second Stage Training
@@ -48,7 +48,7 @@ You can directly download our pre-processed datasets and use them for the second
     ```
 
 ### Complete Two-Stage Process
-If you want to use your own datasets and perform the complete two-stage process, you can use the tools provided in the `tools` folder to perform image cropping and SAM object reconstruction.
+If you want to use your own datasets and perform the complete two-stage process, you can use the `image_cropping.py` and `SAM_wavelet.py` provided in the `tools` folder to perform image cropping and wavelet-driven SAM-Generated object reconstruction.
 
 #### First Stage Training
 1. Perform the first stage of training by loading SGO and SGB, and modifying the `train_1.py` and `utils_1.py` files.
