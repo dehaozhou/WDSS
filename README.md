@@ -17,7 +17,12 @@ To set up the environment, please follow these steps:
 ## Datasets
 You can download the pre-processed datasets from the following Baidu Netdisk link:
 
-[Baidu Netdisk Link](your_baidu_link)
+Vaihingen: [Baidu Netdisk Link](your_baidu_link)
+
+Loveda: [Baidu Netdisk Link](your_baidu_link)
+
+Potsdam: [Baidu Netdisk Link](your_baidu_link)
+
 
 After downloading and extracting, place the datasets in the `./Datasets` directory.
 
