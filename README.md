@@ -3,7 +3,7 @@
 ## Installation
 To set up the environment, please follow these steps:
 
-1. Create and activate a conda environment with Python 3.7:
+1. Create and activate a conda environment :
     ```shell
     conda create -n wdss_env python=3.7
     conda activate wdss_env
@@ -19,7 +19,7 @@ You can download the pre-processed datasets from the following Baidu Netdisk lin
 
 [Baidu Netdisk Link](your_baidu_link)
 
-After downloading and extracting, place the datasets in the `WDSS/Datasets` directory.
+After downloading and extracting, place the datasets in the `./Datasets` directory.
 
 ## Project Structure
 
