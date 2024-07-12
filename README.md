@@ -29,43 +29,44 @@ After downloading and extracting, place the datasets in the `./Datasets` directo
 ## Project Structure
 
 The folder structure for the `WDSS` directory is as follows:
+
+```plaintext
 WDSS/
 ├── Datasets/
-│ ├── Loveda/
-│ │ ├── 3SGB/
-│ │ ├── 3SGO/
-│ │ ├── img/
-│ │ ├── img_0.125/
-│ │ ├── img_0.25/
-│ │ ├── label/
-│ │ ├── label_0.125/
-│ │ ├── label_0.25/
-│ │ ├── SGB/
-│ │ ├── SGO/
-│ │ └── .gitkeep
-│ ├── Potsdam
-│ └── Vaihingen
+│   ├── Loveda/
+│   │   ├── 3SGB/
+│   │   ├── 3SGO/
+│   │   ├── img/
+│   │   ├── img_0.125/
+│   │   ├── img_0.25/
+│   │   ├── label/
+│   │   ├── label_0.125/
+│   │   ├── label_0.25/
+│   │   ├── SGB/
+│   │   └── SGO/
+│   ├── Potsdam/
+│   └── Vaihingen/
 ├── Result/
-│ ├── loveda/
-│ │ ├── 0.125/
-│ │ │ ├── 1/
-│ │ │ │ ├── img_PL/
-│ │ │ │ └── lable_PL/
-│ │ │ ├── 2/
-│ │ ├── 0.25/
-│ │ │ ├── 1/
-│ │ │ │ ├── img_PL/
-│ │ │ │ └── lable_PL/
-│ │ │ ├── 2/
-│ ├── potsdam
-│ └── vaihingen
+│   ├── loveda/
+│   │   ├── 0.125/
+│   │   │   ├── 1/
+│   │   │   │   ├── img_PL/
+│   │   │   │   └── lable_PL/
+│   │   │   ├── 2/
+│   │   ├── 0.25/
+│   │   │   ├── 1/
+│   │   │   │   ├── img_PL/
+│   │   │   │   └── lable_PL/
+│   │   │   ├── 2/
+│   ├── potsdam/
+│   └── vaihingen/
 ├── model/
-│ ├── FTUNetFormer.py
-│ ├── FTUNetFormer_1.py
-│ └── swintransformerv2.py
+│   ├── FTUNetFormer.py
+│   ├── FTUNetFormer_1.py
+│   └── swintransformerv2.py
 ├── tools/
-│ ├── image_cropping.py
-│ └── SAM_wavelet.py
+│   ├── image_cropping.py
+│   └── SAM_wavelet.py
 ├── mask.py
 ├── requirements.txt
 ├── train_1.py
@@ -73,6 +74,7 @@ WDSS/
 ├── utils_1.py
 ├── utils_2.py
 └── utils_mask.py
+
 
 
 
