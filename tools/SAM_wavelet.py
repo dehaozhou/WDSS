@@ -21,10 +21,10 @@ print("PyTorch version:", torch.__version__)
 print("Torchvision version:", torchvision.__version__)
 print("CUDA is available:", torch.cuda.is_available())
 
-directory_name = r'/home/dehaozhou/SSRS-main/SAM_RS/Vaihingen/shiyan/img/'
-save_dir_sgb = r"/home/dehaozhou/SSRS-main/SAM_RS/Vaihingen/shiyan/sgb1/"
-save_dir_sgo = r"/home/dehaozhou/SSRS-main/SAM_RS/Vaihingen/shiyan/sgo1/"
-output_folder = r"/home/dehaozhou/SSRS-main/SAM_RS/Vaihingen/shiyan/sgo_hebing1/"
+directory_name = r'/home/SSRS-main/SAM_RS/Vaihingen/shiyan/img/'
+save_dir_sgb = r"/home/SSRS-main/SAM_RS/Vaihingen/shiyan/sgb1/"
+save_dir_sgo = r"/home/SSRS-main/SAM_RS/Vaihingen/shiyan/sgo1/"
+output_folder = r"/home/SSRS-main/SAM_RS/Vaihingen/shiyan/sgo_hebing1/"
 
 w1, w2 = 0.05, 0.95
 wavelets = ['haar', 'sym2']
