@@ -15,7 +15,7 @@ To set up the environment, please follow these steps:
     ```
 
 ## Datasets
-You can download the pre-processed datasets from the following Baidu Netdisk link , and extraction code is 1234:
+You can download the pre-processed datasets from the following  link , and extraction code is 1234:
 
 Vaihingen: [https://pan.baidu.com/s/1ONi-iKEdgIVXRBarZechVg]
 
