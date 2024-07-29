@@ -19,7 +19,7 @@ You can download the pre-processed datasets from the following  link , and extra
 
 Vaihingen: [https://pan.baidu.com/s/1ONi-iKEdgIVXRBarZechVg]
 
-Loveda: [https://pan.baidu.com/s/1LJpVGdl9aY006Md1RQtmVw ]
+LoveDA: [https://pan.baidu.com/s/1LJpVGdl9aY006Md1RQtmVw ]
 
 Potsdam: [https://pan.baidu.com/s/1qSPbHBkR5iCfRTwminY_HQ ]
 
