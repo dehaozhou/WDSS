@@ -113,8 +113,6 @@ You can directly download our pre-processed datasets and use them for the second
     ```shell
     python train_1.py
     ```
-#### First Stage Training
-
 4. Generate pseudo-labels using `mask.py` and `utils_mask.py`:
     ```shell
     python mask.py
