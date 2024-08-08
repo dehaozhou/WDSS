@@ -49,11 +49,11 @@ print(params)
 print("training : ", len(train_ids)+len(PL_ids))
 print("testing : ", len(test_ids))
 
-train_set = ISPRS_dataset1(train_ids, cache=True)
-# train_set = ISPRS_dataset1(train_ids, cache=False)
+# train_set = ISPRS_dataset1(train_ids, cache=True)
+train_set = ISPRS_dataset1(train_ids, cache=False)
 
-train_set_PL = ISPRS_dataset2(PL_ids, cache=True)
-# train_set_PL = ISPRS_dataset2(PL_ids, cache=False)
+# train_set_PL = ISPRS_dataset2(PL_ids, cache=True)
+train_set_PL = ISPRS_dataset2(PL_ids, cache=False)
 
 train_loader = torch.utils.data.DataLoader(train_set,batch_size=BATCH_SIZE)
 
@@ -75,11 +75,11 @@ for key, value in params_dict.items():
 optimizer = optim.SGD(net.parameters(), lr=base_lr, momentum=0.9, weight_decay=0.0005)
 
 #vaihingen
-scheduler = optim.lr_scheduler.MultiStepLR(optimizer, [15,25,35], gamma=0.1)
+# scheduler = optim.lr_scheduler.MultiStepLR(optimizer, [15,25,35], gamma=0.1)
 #potsdam
 # scheduler = optim.lr_scheduler.MultiStepLR(optimizer, [33,40,48,54], gamma=0.33)
 #loveda
-# scheduler = optim.lr_scheduler.MultiStepLR(optimizer, [15,25,35], gamma=0.33)
+scheduler = optim.lr_scheduler.MultiStepLR(optimizer, [20,30,40], gamma=0.33)
 
 def test(net, test_ids, all=False, stride=WINDOW_SIZE[0], batch_size=BATCH_SIZE, window_size=WINDOW_SIZE):
     test_images = (1 / 255 * np.asarray(io.imread(DATA_FOLDER.format(id)), dtype='float32') for id in test_ids)
@@ -126,7 +126,7 @@ def test(net, test_ids, all=False, stride=WINDOW_SIZE[0], batch_size=BATCH_SIZE,
         return accuracy
 
 
-def train_and_test(net, optimizer, epochs, scheduler=scheduler, weights=WEIGHTS, save_epoch=1, start_testing_epoch=1):
+def train_and_test(net, optimizer, epochs, scheduler=scheduler, weights=WEIGHTS, save_epoch=1, start_testing_epoch=5):
     losses = np.zeros(1000000)
     mean_losses = np.zeros(100000000)
     weights = weights.cuda()
@@ -196,14 +196,14 @@ def train_and_test(net, optimizer, epochs, scheduler=scheduler, weights=WEIGHTS,
                 if DATASET == 'Vaihingen':
                     torch.save(net.state_dict(), './Result/vaihingen/0.25/2/WDSS_epoch{}_{}'.format(e, MIoU))
                 elif DATASET == 'Loveda':
-                    torch.save(net.state_dict(), './Result/loveda/0.125/2/WDSS_epoch{}_{}'.format(e, MIoU))
+                    torch.save(net.state_dict(), './Result/loveda/0.25/2/WDSS_epoch{}_{}'.format(e, MIoU))
                 elif DATASET == 'Potsdam':
                     torch.save(net.state_dict(), './Result/potsdam/0.25/2/WDSS_epoch{}_{}'.format(e, MIoU))
                 MIoU_best = MIoU
 
 # Usage example:
 if MODE == 'Train':
-    train_and_test(net, optimizer, 50, scheduler)
+    train_and_test(net, optimizer, 70, scheduler)
 elif MODE == 'Test':
     # Perform testing here after training
     if DATASET == 'Potsdam':
