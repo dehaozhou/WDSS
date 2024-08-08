@@ -23,7 +23,6 @@ LoveDA: [https://pan.baidu.com/s/1LJpVGdl9aY006Md1RQtmVw ]
 
 Potsdam: [https://pan.baidu.com/s/1qSPbHBkR5iCfRTwminY_HQ ]
 
-
 After downloading and extracting, place the datasets in the `./Datasets` directory.
 
 ## Project Structure
@@ -99,7 +98,8 @@ You can directly download our pre-processed datasets and use them for the second
     ```
 
 ### Complete Two-Stage Process
-If you want to use your own datasets and perform the complete two-stage process, you can use `image_cropping.py` and `SAM_wavelet.py` provided in the `tools` folder for image cropping and wavelet-driven SAM-generated object reconstruction.
+1.If you want to use your own datasets and perform the complete two-stage process, you can use `image_cropping.py` and `SAM_wavelet.py` provided in the `tools` folder for image cropping and wavelet-driven SAM-generated object reconstruction.
+2.You can also use SAM 2 to generate SGO and SGB for WDSS. Please prepare a new environment for SAM 2 and use `SAM2_wavelet` from the `tools` folder to process the datasets. Note that we use the default parameters for SAM 2, but you can adjust these parameters based on your specific image requirements for better results. If you prefer not to spend time on preprocessing, the links we provided include datasets processed with both SAM and SAM 2.
 
 
 #### First Stage Training
@@ -112,6 +112,7 @@ If you want to use your own datasets and perform the complete two-stage process,
     ```shell
     python train_1.py
     ```
+#### First Stage Training
 
 4. Generate pseudo-labels using `mask.py` and `utils_mask.py`:
     ```shell
