@@ -143,7 +143,7 @@ def test1(net, test_ids, stride=WINDOW_SIZE[0], batch_size=BATCH_SIZE, window_si
             pred = apply_adaptive_threshold(pred)
             img = convert_to_color(np.argmax(pred, axis=-1))
             img_id = id_.split('/')[-1].split('.')[0]
-            io.imsave('./Result/vaihingen/0.25/1/lable_PL/' + img_id + '.tif', img)
+            io.imsave('./Result/loveda/0.25/1/lable_PL/' + img_id + '.png', img) ### Please check the utilis file to determine whether to save in png format or tif format
 
 
 #对训练集覆盖掩码
@@ -188,7 +188,7 @@ def test2(net, test_ids, stride=WINDOW_SIZE[0], batch_size=BATCH_SIZE, window_si
                 white_mask[pos[0], pos[1], :] = 255
             masked_img = img_rgb * (255 - white_mask) + white_mask
             masked_img_clipped = np.clip(masked_img, 0, 255).astype(np.uint8)
-            output_path = './Result/vaihingen/0.25/1/img_PL/' + id_ + '.png'
+            output_path = './Result/loveda/0.25/1/img_PL/' + id_ + '.png'
             io.imsave(output_path, masked_img_clipped, plugin='tifffile')
 
 
